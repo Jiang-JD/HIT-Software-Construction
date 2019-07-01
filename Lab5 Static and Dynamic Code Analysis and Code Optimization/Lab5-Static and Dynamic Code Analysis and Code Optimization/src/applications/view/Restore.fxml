@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applications.view.RestoreController">
+   <children>
+      <TableView fx:id="mementos" prefHeight="438.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="indexColumn" prefWidth="75.0" text="Index" />
+          <TableColumn fx:id="timeColumn" prefWidth="208.0" text="Time" />
+            <TableColumn fx:id="detailColumn" prefWidth="516.0" text="Detail" />
+        </columns>
+      </TableView>
+      <Button layoutX="695.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="30.0" prefWidth="91.0" text="Cancel" />
+      <Button layoutX="587.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleRestore" prefHeight="30.0" prefWidth="91.0" text="Restore" />
+      <Label fx:id="info" layoutX="29.0" layoutY="457.0" prefHeight="20.0" prefWidth="540.0" text="Click to choose the memento to restore">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

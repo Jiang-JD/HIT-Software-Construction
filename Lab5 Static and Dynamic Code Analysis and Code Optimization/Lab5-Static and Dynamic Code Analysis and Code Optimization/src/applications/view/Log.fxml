@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applications.view.LogController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="900.0">
+         <top>
+            <AnchorPane prefHeight="143.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <DatePicker fx:id="ed" layoutX="264.0" layoutY="43.0" />
+                  <DatePicker fx:id="sd" layoutX="14.0" layoutY="44.0" />
+                  <ChoiceBox fx:id="classtype" layoutX="543.0" layoutY="43.0" prefHeight="30.0" prefWidth="133.0" />
+                  <ChoiceBox fx:id="operationtype" layoutX="722.0" layoutY="43.0" prefHeight="30.0" prefWidth="131.0" visible="false" />
+                  <ChoiceBox fx:id="method" layoutX="543.0" layoutY="102.0" prefHeight="30.0" prefWidth="134.0" />
+                  <ChoiceBox fx:id="type" layoutX="722.0" layoutY="102.0" prefHeight="30.0" prefWidth="130.0" />
+                  <Label layoutX="14.0" layoutY="17.0" text="Start Date" />
+                  <Label layoutX="264.0" layoutY="16.0" text="End Date" />
+                  <ChoiceBox fx:id="logtype" layoutX="14.0" layoutY="102.0" prefWidth="150.0" />
+                  <Label layoutX="14.0" layoutY="78.0" text="Log Type " />
+                  <Label layoutX="543.0" layoutY="16.0" text="Class" />
+                  <CheckBox fx:id="cbxBytime" layoutX="412.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleByTime" text="By Time" />
+                  <Label layoutX="722.0" layoutY="16.0" text="Operation type" visible="false" />
+                  <Label layoutX="543.0" layoutY="78.0" text="Method" />
+                  <Label layoutX="722.0" layoutY="79.0" text="Type" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <StackPane fx:id="stackpane" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="exception" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="exceptionDate" prefWidth="95.0" text="Date" />
+                      <TableColumn fx:id="exceptionTime" prefWidth="101.0" text="Time" />
+                        <TableColumn fx:id="exceptionType" prefWidth="112.0" text="Type" />
+                        <TableColumn fx:id="exceptionLocation" prefWidth="179.0" text="Location" />
+                        <TableColumn fx:id="exceptionDetails" prefWidth="310.0" text="Details" />
+                        <TableColumn fx:id="exceptionResult" prefWidth="102.0" text="Result" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="operation" prefHeight="434.0" prefWidth="900.0">
+                    <columns>
+                      <TableColumn fx:id="operateDate" prefWidth="115.0" text="Date" />
+                      <TableColumn fx:id="operateTime" prefWidth="113.0" text="Time" />
+                        <TableColumn fx:id="operateType" prefWidth="209.0" text="Method" />
+                        <TableColumn fx:id="operateDetails" prefWidth="462.0" text="Details" />
+                    </columns>
+                  </TableView>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

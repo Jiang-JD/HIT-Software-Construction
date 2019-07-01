@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applications.view.DifferenceController">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="766.0" prefWidth="1088.0">
+         <children>
+            <HBox prefHeight="535.0" prefWidth="1061.0">
+               <children>
+                  <StackPane fx:id="vispane1" prefHeight="535.0" prefWidth="544.0" />
+                  <StackPane fx:id="vispane2" prefHeight="535.0" prefWidth="544.0" />
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="238.0" prefWidth="1088.0">
+               <children>
+                  <TextArea fx:id="difference" layoutX="17.0" layoutY="36.0" prefHeight="183.0" prefWidth="482.0" />
+                  <DatePicker fx:id="sd" layoutX="544.0" layoutY="36.0" />
+                  <TextField fx:id="st" layoutX="544.0" layoutY="71.0" prefHeight="30.0" prefWidth="233.0" />
+                  <DatePicker fx:id="ed" layoutX="841.0" layoutY="36.0" />
+                  <TextField fx:id="et" layoutX="841.0" layoutY="71.0" prefHeight="30.0" prefWidth="233.0" />
+                  <Button layoutX="896.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleFind" prefHeight="30.0" prefWidth="85.0" text="Find" />
+                  <Button layoutX="992.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="30.0" prefWidth="85.0" text="Cancel" />
+                  <Label layoutX="548.0" layoutY="14.0" text="Start-Date-Time" />
+                  <Label layoutX="841.0" layoutY="14.0" text="End-Date-Time" />
+                  <Label layoutX="17.0" layoutY="14.0" text="Difference Description" />
+                  <Label layoutX="678.0" layoutY="14.0" text="hh:MM:ss" />
+                  <Label layoutX="957.0" layoutY="14.0" text="hh:MM:ss" />
+                  <Label fx:id="error" layoutX="510.0" layoutY="206.0" prefHeight="20.0" prefWidth="374.0" textFill="RED" />
+                  <DatePicker fx:id="sd1" layoutX="544.0" layoutY="125.0" />
+                  <TextField fx:id="st1" layoutX="544.0" layoutY="160.0" prefHeight="30.0" prefWidth="233.0" />
+                  <Label layoutX="548.0" layoutY="103.0" text="Start-Date-Time" />
+                  <Label layoutX="678.0" layoutY="103.0" text="hh:MM:ss" />
+                  <DatePicker fx:id="ed1" layoutX="841.0" layoutY="125.0" />
+                  <TextField fx:id="et1" layoutX="841.0" layoutY="160.0" prefHeight="30.0" prefWidth="233.0" />
+                  <Label layoutX="841.0" layoutY="103.0" text="End-Date-Time" />
+                  <Label layoutX="957.0" layoutY="103.0" text="hh:MM:ss" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
