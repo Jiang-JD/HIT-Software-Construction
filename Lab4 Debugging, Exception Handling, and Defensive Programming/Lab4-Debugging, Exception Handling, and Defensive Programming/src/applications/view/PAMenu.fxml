@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1044.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applications.view.PAMenuController">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="600.0" prefWidth="1044.0">
+         <top>
+            <MenuBar prefHeight="17.0" prefWidth="993.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Selection">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleRecovery" text="Recovery Structure" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleDifference" text="Difference" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleDistance" text="Logic Diatance" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleOutput" text="Output" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleLog" text="System Log" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <left>
+            <TableView fx:id="groups" prefHeight="575.0" prefWidth="281.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="indexColumn" prefWidth="68.0" text="Index" />
+                <TableColumn fx:id="durationColumn" prefWidth="212.0" text="Duration" />
+              </columns>
+            </TableView>
+         </left>
+         <right>
+            <TableView fx:id="appstable" prefHeight="575.0" prefWidth="166.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="appsColumn" prefWidth="183.0" text="Apps" />
+              </columns>
+            </TableView>
+         </right>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="trackmap" layoutX="10.0" layoutY="168.0" prefHeight="336.0" prefWidth="578.0">
+                    <columns>
+                      <TableColumn fx:id="trackColumn" prefWidth="100.0" text="Track" />
+                      <TableColumn fx:id="trackappColumn" prefWidth="496.0" text="Apps" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="507.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="30.0" prefWidth="80.0" text="Edit" />
+                  <Button layoutX="410.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleVisualize" prefHeight="30.0" prefWidth="89.0" text="Visualize" />
+                  <GridPane prefHeight="142.0" prefWidth="597.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="111.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.0" minWidth="10.0" prefWidth="476.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Name" />
+                        <Label text="Duration" GridPane.rowIndex="1" />
+                        <Label text="Apps Number" GridPane.rowIndex="2" />
+                        <Label text="Entropy" GridPane.rowIndex="3" />
+                        <Label fx:id="name" prefHeight="20.0" prefWidth="484.0" GridPane.columnIndex="1" />
+                        <Label fx:id="duration" prefHeight="20.0" prefWidth="482.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="appsnum" prefHeight="20.0" prefWidth="507.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="entropy" prefHeight="20.0" prefWidth="483.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

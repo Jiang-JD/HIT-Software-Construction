@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applications.view.RaceViewController">
+   <children>
+      <SplitPane dividerPositions="0.29435897435897435" prefHeight="685.0" prefWidth="977.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="683.0" prefWidth="312.0">
+               <children>
+                  <TextField fx:id="newtrack" layoutX="14.0" layoutY="44.0" prefHeight="30.0" prefWidth="141.0" />
+                  <Button layoutX="167.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleAddTrack" prefHeight="30.0" prefWidth="79.0" text="Add" />
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="186.0" text="Add NewTrack (Number)" />
+                  <TextField fx:id="removetrack" layoutX="15.0" layoutY="116.0" prefHeight="30.0" prefWidth="141.0" />
+                  <Button layoutX="167.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleRemoveTrack" text="Remove" />
+                  <Label layoutX="15.0" layoutY="86.0" prefHeight="30.0" prefWidth="176.0" text="Remove Track (Index)" />
+                  <TextField fx:id="athlete" layoutX="15.0" layoutY="191.0" prefHeight="30.0" prefWidth="141.0" />
+                  <Button layoutX="167.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleRemoveAthlete" text="Remove" />
+                  <Label layoutX="15.0" layoutY="161.0" prefHeight="30.0" prefWidth="237.0" text="Remove Athlete (Name)" />
+                  <TextField fx:id="name" layoutX="108.0" layoutY="269.0" prefHeight="30.0" prefWidth="141.0" />
+                  <Button layoutX="167.0" layoutY="474.0" mnemonicParsing="false" onAction="#handleAddAthlete" prefHeight="30.0" prefWidth="79.0" text="Add" />
+                  <Label layoutX="15.0" layoutY="239.0" prefHeight="30.0" prefWidth="186.0" text="Add athlete on track" />
+                  <Label layoutX="15.0" layoutY="269.0" prefHeight="30.0" prefWidth="79.0" text="Name" />
+                  <Label layoutX="15.0" layoutY="299.0" prefHeight="30.0" prefWidth="79.0" text="Number" />
+                  <Label layoutX="15.0" layoutY="329.0" prefHeight="30.0" prefWidth="79.0" text="Nation" />
+                  <Label layoutX="15.0" layoutY="359.0" prefHeight="30.0" prefWidth="79.0" text="Age" />
+                  <Label layoutX="15.0" layoutY="389.0" prefHeight="30.0" prefWidth="79.0" text="Score" />
+                  <TextField fx:id="number" layoutX="108.0" layoutY="299.0" prefHeight="30.0" prefWidth="141.0" />
+                  <TextField fx:id="nation" layoutX="108.0" layoutY="329.0" prefHeight="30.0" prefWidth="141.0" />
+                  <TextField fx:id="age" layoutX="107.0" layoutY="359.0" prefHeight="30.0" prefWidth="141.0" />
+                  <TextField fx:id="score" layoutX="107.0" layoutY="389.0" prefHeight="30.0" prefWidth="141.0" />
+                  <Label layoutX="15.0" layoutY="516.0" text="Entropy" />
+                  <Label layoutX="16.0" layoutY="419.0" prefHeight="30.0" prefWidth="79.0" text="Track" />
+                  <TextField fx:id="addtrack" layoutX="108.0" layoutY="419.0" prefHeight="30.0" prefWidth="141.0" />
+                  <Label fx:id="entropy" layoutX="82.0" layoutY="516.0" prefHeight="20.0" prefWidth="168.0" />
+                  <Label fx:id="errorAddTrack" layoutX="14.0" layoutY="76.0" prefHeight="20.0" prefWidth="237.0" textFill="RED" />
+                  <Label fx:id="errorRemoveTrack" layoutX="15.0" layoutY="151.0" prefHeight="20.0" prefWidth="237.0" textFill="RED" />
+                  <Label fx:id="errorRemoveAthlete" layoutX="15.0" layoutY="221.0" prefHeight="20.0" prefWidth="237.0" textFill="RED" />
+                  <Label fx:id="errorAddAthlete" layoutX="14.0" layoutY="454.0" prefHeight="20.0" prefWidth="280.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="rightAnchor" minHeight="0.0" minWidth="0.0" prefHeight="641.0" prefWidth="656.0">
+               <children>
+                  <StackPane fx:id="vispane" prefHeight="620.0" prefWidth="684.0" />
+                  <Button layoutX="592.0" layoutY="639.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+                  <Button layoutX="505.0" layoutY="639.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="30.0" prefWidth="68.0" text="Save" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

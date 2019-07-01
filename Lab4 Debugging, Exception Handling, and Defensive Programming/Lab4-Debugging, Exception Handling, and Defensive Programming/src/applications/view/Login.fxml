@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="applications.view.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="34.0" layoutY="31.0" prefHeight="339.0" prefWidth="532.0" spacing="20.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="87.0" prefWidth="440.0" text="CircularOrbitApplication">
+               <font>
+                  <Font name="Consolas Bold" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_trackgame" mnemonicParsing="false" onAction="#handleOpenFile_TG" prefHeight="48.0" prefWidth="198.0" text="TrackGame" />
+            <Button fx:id="btn_atomstructure" mnemonicParsing="false" onAction="#handleOpenFile_AS" prefHeight="48.0" prefWidth="199.0" text="AtomStructure" />
+            <Button fx:id="btn_appeco" mnemonicParsing="false" onAction="#handleOpenFile_AE" prefHeight="47.0" prefWidth="198.0" text="PersonAppEcosystem" />
+            <Button fx:id="btn_appeco1" mnemonicParsing="false" onAction="#handleLog" prefHeight="47.0" prefWidth="198.0" text="Log System" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
