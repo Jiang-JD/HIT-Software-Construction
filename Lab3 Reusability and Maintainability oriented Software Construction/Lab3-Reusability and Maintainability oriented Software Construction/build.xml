@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Lab3-1163450201">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Lab3-1163450201.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/junit.jar"/>
+        <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="txt/"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="test"/>
+            <exclude name="txt/"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="AppFactoryTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="physicalObject.AppFactoryTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="AppInstallTimeTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="applications.AppInstallTimeTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="ApplicationEntry">
+        <java classname="applications.ApplicationEntry" failonerror="true" fork="yes">
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="AppTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="physicalObject.AppTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="AppTrackFactoryTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="track.AppTrackFactoryTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="AthleteFactoryTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="physicalObject.AthleteFactoryTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="AthleteTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="physicalObject.AthleteTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="AtomStructureParserTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="parser.AtomStructureParserTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="AtomStructureTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="circularOrbit.AtomStructureTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="AtomStructureTest.testtoString">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="circularOrbit.AtomStructureTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="circularOrbit">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="circularOrbit.AtomStructureTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.ConcreteCircularOrbitTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.ConcreteStateTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.PersonalAppEcosystemTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.TrackGameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="CircularOrbitAPIsTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="APIs.CircularOrbitAPIsTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="CircularOrbitHelper">
+        <java classname="APIs.CircularOrbitHelper" failonerror="true" fork="yes">
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="ConcreteCircularOrbitTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="circularOrbit.ConcreteCircularOrbitTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="ConcreteStateTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="circularOrbit.ConcreteStateTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="DifferenceTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="APIs.DifferenceTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="DividerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="applications.DividerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="FileChooser">
+        <java classname="applications.FileChooser" failonerror="true" fork="yes">
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="fx">
+        <java classname="APIs.fx" failonerror="true" fork="yes">
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="hello">
+        <java classname="circularOrbit.hello" failonerror="true" fork="yes">
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="hghgh">
+        <java classname="circularOrbit.hghgh" failonerror="true" fork="yes">
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="MementoCareTakerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="applications.MementoCareTakerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="MementoCareTakerTest.testToTable">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="applications.MementoCareTakerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="PersonalAppEcosystemParserTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="parser.PersonalAppEcosystemParserTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="PersonalAppEcosystemTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="circularOrbit.PersonalAppEcosystemTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="PersonalAppManagerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="manager.PersonalAppManagerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="physicalObject (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="physicalObject.AppFactoryTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.AppTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.AthleteFactoryTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.AthleteTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.ElectronFactoryTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="physicalObject">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="RaceTrackFactoryTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="track.RaceTrackFactoryTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="test (2)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="APIs.CircularOrbitAPIsTest" todir="${junit.output.dir}"/>
+            <test name="APIs.DifferenceTest" todir="${junit.output.dir}"/>
+            <test name="applications.AppInstallTimeTest" todir="${junit.output.dir}"/>
+            <test name="applications.DividerTest" todir="${junit.output.dir}"/>
+            <test name="applications.MementoCareTakerTest" todir="${junit.output.dir}"/>
+            <test name="applications.TimespanTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.AtomStructureTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.ConcreteCircularOrbitTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.ConcreteStateTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.PersonalAppEcosystemTest" todir="${junit.output.dir}"/>
+            <test name="circularOrbit.TrackGameTest" todir="${junit.output.dir}"/>
+            <test name="manager.PersonalAppManagerTest" todir="${junit.output.dir}"/>
+            <test name="manager.TrackGameManagerTest" todir="${junit.output.dir}"/>
+            <test name="parser.AtomStructureParserTest" todir="${junit.output.dir}"/>
+            <test name="parser.PersonalAppEcosystemParserTest" todir="${junit.output.dir}"/>
+            <test name="parser.TrackGameParserTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.AppFactoryTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.AppTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.AthleteFactoryTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.AthleteTest" todir="${junit.output.dir}"/>
+            <test name="physicalObject.ElectronFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.AppTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.ElectronTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.RaceTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.RaceTrackTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="TimespanTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="applications.TimespanTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="track">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="track.AppTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.ElectronTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.RaceTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.RaceTrackTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="TrackGameManagerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="manager.TrackGameManagerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="TrackGameParserTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="parser.TrackGameParserTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="TrackGameTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="circularOrbit.TrackGameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab3-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
