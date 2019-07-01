@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="835.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MenuController">
+   <children>
+      <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="1220.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Selection">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpenFile" text="Open" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Run">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleRun" text="Run" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.23563218390804597" layoutY="30.0" prefHeight="805.0" prefWidth="1220.0">
+         <items>
+            <AnchorPane prefHeight="749.0" prefWidth="307.0">
+               <children>
+                  <GridPane layoutY="6.0" prefHeight="253.0" prefWidth="271.0" AnchorPane.leftAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="112.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="154.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Time span" />
+                        <Label text="Per Number" GridPane.rowIndex="1" />
+                        <Label text="Total Monkeys" GridPane.rowIndex="2" />
+                        <Label text="Total Ladders" GridPane.rowIndex="4" />
+                        <Label text="Rungs" GridPane.rowIndex="5" />
+                        <Label text="Max Speed" GridPane.rowIndex="3" />
+                        <Label text="Throughput" GridPane.rowIndex="7" />
+                        <Label text="Fairness" GridPane.rowIndex="8" />
+                        <TextField fx:id="timespan" GridPane.columnIndex="1" />
+                        <TextField fx:id="pernum" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="totalnum" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="mv" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="totalladders" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="rungnum" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="throughput" prefHeight="20.0" prefWidth="159.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label fx:id="fairness" prefHeight="20.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Label text="Selector" GridPane.rowIndex="6" />
+                        <ChoiceBox fx:id="selectors" prefHeight="30.0" prefWidth="156.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </GridPane>
+                  <TextArea fx:id="console" layoutX="9.0" layoutY="267.0" prefHeight="534.0" prefWidth="263.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="784.0" prefWidth="963.0">
+               <children>
+                  <Line endX="-100.0" endY="742.0" layoutX="280.0" layoutY="3.0" startX="-100.0" stroke="#c9c9c9" strokeWidth="5.0" />
+                  <Line endX="-100.0" endY="742.0" layoutX="862.0" layoutY="3.0" startX="-100.0" stroke="#c9c9c9" strokeWidth="5.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9ed3ffbc" height="803.0" layoutX="106.0" stroke="BLACK" strokeType="INSIDE" width="721.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="369.0" layoutY="130.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="369.0" layoutY="519.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="520.0" layoutY="64.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="656.0" layoutY="148.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="665.0" layoutY="486.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="511.0" layoutY="406.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="776.0" layoutY="456.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <Line endX="-100.0" endY="175.0" layoutX="768.0" layoutY="64.0" startX="-100.0" stroke="#ffffffa7" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="20.0" />
+                  <AnchorPane fx:id="visualpane" layoutY="11.0" prefHeight="792.0" prefWidth="935.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
