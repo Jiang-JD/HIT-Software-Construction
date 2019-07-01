@@ -1,0 +1,9 @@
+Athlete ::= <Chen,7,KOR,29,10.12> 
+Athlete ::= <Park,12,USA,28,10.01> 
+Athlete ::= <Trump,9,CHN,19,9.89> 
+Athlete ::= <Obama,6,RUS,19,9.90> 
+Game ::= 100
+Athlete ::= <Cliton,8,USA,21,9.92> 
+Athlete ::= <Chistropher,4,USA,39,9.92> 
+
+NumOfTracks ::= 7
