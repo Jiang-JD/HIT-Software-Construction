@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Lab5-1163450201">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="C:/Users/hit/eclipse/java-photon/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Lab5-1163450201.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/junit.jar"/>
+        <pathelement location="lib/log4j-1.2.7.jar"/>
+        <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="test"/>
+            <classpath refid="Lab5-1163450201.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="IoTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="parser.IoTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="MainAppGui">
+        <java classname="applications.MainAppGui" failonerror="true" fork="yes">
+            <jvmarg line="-XX:MetaspaceSize=50000000 -XX:+UseParNewGC&#13;&#10;-Xverify:none &#13;&#10;-Dorg.netbeans.profiler.separateConsole=true"/>
+            <classpath refid="Lab5-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="test (5)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="apis.CircularOrbitApisTest" todir="${junit.output.dir}"/>
+            <test name="apis.DifferenceTest" todir="${junit.output.dir}"/>
+            <test name="applications.AppInstallTimeTest" todir="${junit.output.dir}"/>
+            <test name="applications.DividerTest" todir="${junit.output.dir}"/>
+            <test name="applications.MementoCareTakerTest" todir="${junit.output.dir}"/>
+            <test name="applications.TimespanTest" todir="${junit.output.dir}"/>
+            <test name="circularorbit.AtomStructureTest" todir="${junit.output.dir}"/>
+            <test name="circularorbit.ConcreteCircularOrbitTest" todir="${junit.output.dir}"/>
+            <test name="circularorbit.ConcreteStateTest" todir="${junit.output.dir}"/>
+            <test name="circularorbit.PersonalAppEcosystemTest" todir="${junit.output.dir}"/>
+            <test name="circularorbit.TrackGameTest" todir="${junit.output.dir}"/>
+            <test name="debug.FindMedianSortedArraysTest" todir="${junit.output.dir}"/>
+            <test name="debug.RemoveCommentsTest" todir="${junit.output.dir}"/>
+            <test name="debug.TopVotedCandidateTest" todir="${junit.output.dir}"/>
+            <test name="manager.PersonalAppManagerTest" todir="${junit.output.dir}"/>
+            <test name="manager.TrackGameManagerTest" todir="${junit.output.dir}"/>
+            <test name="parser.AtomStructureParserTest" todir="${junit.output.dir}"/>
+            <test name="parser.IoTest" todir="${junit.output.dir}"/>
+            <test name="parser.PersonalAppEcosystemParserTest" todir="${junit.output.dir}"/>
+            <test name="parser.TrackGameParserTest" todir="${junit.output.dir}"/>
+            <test name="physicalobject.AppFactoryTest" todir="${junit.output.dir}"/>
+            <test name="physicalobject.AppTest" todir="${junit.output.dir}"/>
+            <test name="physicalobject.AthleteFactoryTest" todir="${junit.output.dir}"/>
+            <test name="physicalobject.AthleteTest" todir="${junit.output.dir}"/>
+            <test name="physicalobject.ElectronFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.AppTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.ElectronTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.RaceTrackFactoryTest" todir="${junit.output.dir}"/>
+            <test name="track.RaceTrackTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab5-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
