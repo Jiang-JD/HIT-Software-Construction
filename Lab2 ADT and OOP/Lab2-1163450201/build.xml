@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Lab2-1163450201">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Lab2-1163450201.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/junit.jar"/>
+        <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/P1">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test/P1">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="P1/"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="P1/"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/P1"/>
+            <src path="test/P1"/>
+            <src path="src"/>
+            <src path="test"/>
+            <exclude name="P1/"/>
+            <exclude name="P1/"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="BoardTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.BoardTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="ChessGame">
+        <java classname="P3.ChessGame" failonerror="true" fork="yes">
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="ConcreteEdgesGraphTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="graph.ConcreteEdgesGraphTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="ConcreteVerticesGraphTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="graph.ConcreteVerticesGraphTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="FriendshipGraph (2)">
+        <java classname="P2.FriendshipGraph" failonerror="true" fork="yes">
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="FriendshipGraphTest (3)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P2.FriendshipGraphTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="GameTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.GameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="graph">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="graph.ConcreteEdgesGraphTest" todir="${junit.output.dir}"/>
+            <test name="graph.ConcreteVerticesGraphTest" todir="${junit.output.dir}"/>
+            <test name="graph.GraphStaticTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="GraphPoetTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="poet.GraphPoetTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="GraphStaticTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="graph.GraphStaticTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="Main (2)">
+        <java classname="poet.Main" failonerror="true" fork="yes">
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </java>
+    </target>
+    <target name="P1 (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="P1">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="graph.ConcreteEdgesGraphTest" todir="${junit.output.dir}"/>
+            <test name="graph.ConcreteVerticesGraphTest" todir="${junit.output.dir}"/>
+            <test name="graph.GraphStaticTest" todir="${junit.output.dir}"/>
+            <test name="poet.GraphPoetTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="P2 (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="P2">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P2.FriendshipGraphTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="P3">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.BoardTest" todir="${junit.output.dir}"/>
+            <test name="P3.ChessBoardTest" todir="${junit.output.dir}"/>
+            <test name="P3.ChessGameTest" todir="${junit.output.dir}"/>
+            <test name="P3.GameTest" todir="${junit.output.dir}"/>
+            <test name="P3.GoBoardTest" todir="${junit.output.dir}"/>
+            <test name="P3.GoGameTest" todir="${junit.output.dir}"/>
+            <test name="P3.PieceTest" todir="${junit.output.dir}"/>
+            <test name="P3.PlayerTest" todir="${junit.output.dir}"/>
+            <test name="P3.PositionTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="PlayerTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.PlayerTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="poet">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="poet.GraphPoetTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="PositionTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.PositionTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="test (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P2.FriendshipGraphTest" todir="${junit.output.dir}"/>
+            <test name="P3.BoardTest" todir="${junit.output.dir}"/>
+            <test name="P3.ChessBoardTest" todir="${junit.output.dir}"/>
+            <test name="P3.ChessGameTest" todir="${junit.output.dir}"/>
+            <test name="P3.GameTest" todir="${junit.output.dir}"/>
+            <test name="P3.GoBoardTest" todir="${junit.output.dir}"/>
+            <test name="P3.GoGameTest" todir="${junit.output.dir}"/>
+            <test name="P3.PieceTest" todir="${junit.output.dir}"/>
+            <test name="P3.PlayerTest" todir="${junit.output.dir}"/>
+            <test name="P3.PositionTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="ChessBoardTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.ChessBoardTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="GoBoardTest.testCapture">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.GoBoardTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="GoBoardTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.GoBoardTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="GoChessGameTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.GoChessGameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="ChessGameTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="P3.ChessGameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="Lab2-1163450201.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
