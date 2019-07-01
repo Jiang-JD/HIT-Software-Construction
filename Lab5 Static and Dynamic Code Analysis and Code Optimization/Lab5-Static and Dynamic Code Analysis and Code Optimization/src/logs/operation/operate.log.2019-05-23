@@ -1,0 +1,126 @@
+2019-05-23 21:48:02 [INFO] (TrackGameManager.java:105) [TrackGameManager]-[clear] Clear TrackGame Manager
+2019-05-23 21:48:02 [INFO] (TrackGameParser.java:215) [TrackGameParser]-[parserFile] Pass the file check: D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\TrackGame.txt
+2019-05-23 21:48:02 [INFO] (Parser.java:87) [Parser]-[getText] Get the text of D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\TrackGame.txt
+2019-05-23 21:48:02 [INFO] (TrackGameParser.java:279) [TrackGameParser]-[athletes] Parser all the athletes objects, number is 13
+2019-05-23 21:48:02 [INFO] (TrackGameParser.java:251) [TrackGameParser]-[trackNum] Parser track number: 5
+2019-05-23 21:48:02 [INFO] (TrackGameParser.java:232) [TrackGameParser]-[raceType] Parser the game: 100
+2019-05-23 21:48:02 [INFO] (TrackGameManager.java:96) [TrackGameManager]-[initial] Initialize TrackGame Manager, filePaht: D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\TrackGame.txt
+2019-05-23 21:48:02 [INFO] (LoginController.java:60) [LoginController]-[handleOpenFile_TG] User open the TrackGame: D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\TrackGame.txt
+2019-05-23 21:48:19 [INFO] (AtomStructureParser.java:155) [AtomStructureParser]-[parserFile] Pass the file check: D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\AtomicStructure.txt
+2019-05-23 21:48:19 [INFO] (Parser.java:87) [Parser]-[getText] Get the text of D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\AtomicStructure.txt
+2019-05-23 21:48:19 [INFO] (AtomStructureParser.java:192) [AtomStructureParser]-[initial] Parser nucleus name: Rb
+2019-05-23 21:48:19 [INFO] (AtomStructureParser.java:209) [AtomStructureParser]-[initial] Parser track number: 5
+2019-05-23 21:48:19 [INFO] (AtomStructureParser.java:233) [AtomStructureParser]-[initial] Parser the electron number: NumberOfElectron ::= 1/2;2/8;3/18;4/8;5/1
+2019-05-23 21:48:19 [INFO] (AtomStructure.java:43) [AtomStructure]-[<init>] Build a new AtomStrucutre
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:82) [CircularOrbitFactory]-[build] Rb add new central point: Rb
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:86) [CircularOrbitFactory]-[build] Rb add new track: 1
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:86) [CircularOrbitFactory]-[build] Rb add new track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:86) [CircularOrbitFactory]-[build] Rb add new track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:86) [CircularOrbitFactory]-[build] Rb add new track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:86) [CircularOrbitFactory]-[build] Rb add new track: 5
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 1
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 1
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 2
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 3
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 4
+2019-05-23 21:48:19 [INFO] (CircularOrbitFactory.java:93) [CircularOrbitFactory]-[build] Rb add new electron on track: 5
+2019-05-23 21:48:19 [INFO] (LoginController.java:86) [LoginController]-[handleOpenFile_AS] User open the AtomStructure: D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\AtomicStructure.txt
+2019-05-23 21:48:19 [INFO] (CircularOrbitApis.java:67) [CircularOrbitApis]-[getObjectDistributionEntropy] Calculate the Entropy 0.9210333056010487
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:513) [PersonalAppManager]-[clear] Clear PersonalAppManager
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystemParser.java:471) [PersonalAppEcosystemParser]-[parserFile] Pass the file check: D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\PersonalAppEcosystem.txt
+2019-05-23 21:48:31 [INFO] (Parser.java:87) [Parser]-[getText] Get the text of D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\PersonalAppEcosystem.txt
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystemParser.java:491) [PersonalAppEcosystemParser]-[getApps] Parser all apps
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystemParser.java:613) [PersonalAppEcosystemParser]-[getAppInstallTime] Parser the install time on apps
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystemParser.java:633) [PersonalAppEcosystemParser]-[getUsageLog] Parser all the usagelog
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystemParser.java:511) [PersonalAppEcosystemParser]-[getRelation] Parser all apps relations
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystemParser.java:549) [PersonalAppEcosystemParser]-[getPeriod] Parser period: Day
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystemParser.java:564) [PersonalAppEcosystemParser]-[getUser] Parser user name: TimWong
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:123) [PersonalAppManager]-[initial] Initial PersonalAppManager
+2019-05-23 21:48:31 [INFO] (LoginController.java:111) [LoginController]-[handleOpenFile_AE] User open the PersonalAppEcosystem: D:\整理 临时\2019 春季\2019 春季学期 软件构造\LABHUB\lab4\Lab4-1163450201\src\txt\PersonalAppEcosystem.txt
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystem.java:69) [PersonalAppEcosystem]-[<init>] Build a new PersonalAppEcosystem AppEco0
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:480) [PersonalAppManager]-[buildEcosystem] AppEco0 add new central point: [Person name: TimWong]
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco0 add new track: 1
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco0 add new App: Wechat on track 1
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco0 add new track: 2
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco0 add new track: 3
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco0 add new track: 4
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco0 add new App: Eleme on track 4
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco0 add new track: 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco0 add new App: Didi on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco0 add new Relation: Wechat,QQ
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco0 add new Relation: Wechat,Eleme
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco0 add new Relation: Eleme,Wechat
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco0 add new Relation: Didi,BaiduMap
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystem.java:69) [PersonalAppEcosystem]-[<init>] Build a new PersonalAppEcosystem AppEco1
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:480) [PersonalAppManager]-[buildEcosystem] AppEco1 add new central point: [Person name: TimWong]
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco1 add new track: 1
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco1 add new App: QQ on track 1
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco1 add new track: 2
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco1 add new track: 3
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco1 add new track: 4
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco1 add new track: 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco1 add new App: Weibo on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco1 add new App: Wechat on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco1 add new App: Eleme on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco1 add new App: Didi on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco1 add new App: BaiduMap on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: QQ,Wechat
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: QQ,Weibo
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: Weibo,QQ
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: Wechat,QQ
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: Wechat,Eleme
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: Eleme,Wechat
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: Didi,BaiduMap
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco1 add new Relation: BaiduMap,Didi
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystem.java:69) [PersonalAppEcosystem]-[<init>] Build a new PersonalAppEcosystem AppEco2
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:480) [PersonalAppManager]-[buildEcosystem] AppEco2 add new central point: [Person name: TimWong]
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco2 add new track: 1
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco2 add new App: BaiduMap on track 1
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco2 add new track: 2
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco2 add new track: 3
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco2 add new track: 4
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:484) [PersonalAppManager]-[buildEcosystem] AppEco2 add new track: 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco2 add new App: QQ on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco2 add new App: Weibo on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:487) [PersonalAppManager]-[buildEcosystem] AppEco2 add new App: Wechat on track 5
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco2 add new Relation: QQ,Wechat
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco2 add new Relation: QQ,Weibo
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco2 add new Relation: Weibo,QQ
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco2 add new Relation: Wechat,QQ
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco2 add new Relation: Wechat,Eleme
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:495) [PersonalAppManager]-[buildEcosystem] AppEco2 add new Relation: BaiduMap,Didi
+2019-05-23 21:48:31 [INFO] (PersonalAppManager.java:191) [PersonalAppManager]-[generateEcosystems] Generate list of PersonalAppEcosystem
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystem.java:69) [PersonalAppEcosystem]-[<init>] Build a new PersonalAppEcosystem AppEco0
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystem.java:69) [PersonalAppEcosystem]-[<init>] Build a new PersonalAppEcosystem AppEco1
+2019-05-23 21:48:31 [INFO] (PersonalAppEcosystem.java:69) [PersonalAppEcosystem]-[<init>] Build a new PersonalAppEcosystem AppEco2

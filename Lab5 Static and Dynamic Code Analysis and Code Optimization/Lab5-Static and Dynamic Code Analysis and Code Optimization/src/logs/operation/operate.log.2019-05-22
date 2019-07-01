@@ -1,0 +1,591 @@
+2019-05-22 21:32:31 [INFO] (TrackGameManager.java:103) [TrackGameManager]-[clear] Clear TrackGame Manager
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:168) [TrackGameParser]-[parserFile] Pass the file check: src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:32:31 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:232) [TrackGameParser]-[athletes] Parser all the athletes objects, number is 7
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:204) [TrackGameParser]-[trackNum] Parser track number: 7
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:185) [TrackGameParser]-[raceType] Parser the game: 100
+2019-05-22 21:32:31 [INFO] (TrackGameManager.java:94) [TrackGameManager]-[initial] Initialize TrackGame Manager, filePaht: src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:32:31 [INFO] (TrackGameManager.java:231) [TrackGameManager]-[grouping] Generate the group of TrackGame, strategy: DividerAscendingOrder
+2019-05-22 21:32:31 [INFO] (TrackGame.java:54) [TrackGame]-[<init>] Build a new TrackGame, TrackGame0
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 6
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 7
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Ronaldo on track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chistropher on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Cliton on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Bolt on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Lewis on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Peter on track: 6
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Coal on track: 7
+2019-05-22 21:32:31 [INFO] (TrackGameManager.java:103) [TrackGameManager]-[clear] Clear TrackGame Manager
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:168) [TrackGameParser]-[parserFile] Pass the file check: src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:32:31 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:232) [TrackGameParser]-[athletes] Parser all the athletes objects, number is 6
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:204) [TrackGameParser]-[trackNum] Parser track number: 7
+2019-05-22 21:32:31 [INFO] (TrackGameParser.java:185) [TrackGameParser]-[raceType] Parser the game: 100
+2019-05-22 21:32:31 [INFO] (TrackGameManager.java:94) [TrackGameManager]-[initial] Initialize TrackGame Manager, filePaht: src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:32:31 [INFO] (TrackGameManager.java:231) [TrackGameManager]-[grouping] Generate the group of TrackGame, strategy: DividerAscendingOrder
+2019-05-22 21:32:31 [INFO] (TrackGame.java:54) [TrackGame]-[<init>] Build a new TrackGame, TrackGame0
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 6
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 7
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Trump on track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Obama on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chistropher on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Cliton on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Park on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chen on track: 6
+2019-05-22 21:32:31 [INFO] (CircularOrbitAPIs.java:362) [CircularOrbitAPIs]-[getDifference] Get the Difference :TrackGame,TrackGame
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:152) [AtomStructureParser]-[parserFile] Pass the file check: src/txt/AtomicStructure_TestDifference1.txt
+2019-05-22 21:32:31 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/AtomicStructure_TestDifference1.txt
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:189) [AtomStructureParser]-[initial] Parser nucleus name: Er
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:206) [AtomStructureParser]-[initial] Parser track number: 6
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:230) [AtomStructureParser]-[initial] Parser the electron number: NumberOfElectron ::= 1/2;2/8;3/18;4/30;5/8;6/2
+2019-05-22 21:32:31 [INFO] (AtomStructure.java:45) [AtomStructure]-[<init>] Build a new AtomStrucutre
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:81) [CircularOrbitFactory]-[build] Er add new central point: Er
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 6
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 6
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 6
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:152) [AtomStructureParser]-[parserFile] Pass the file check: src/txt/AtomicStructure_TestDifference2.txt
+2019-05-22 21:32:31 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/AtomicStructure_TestDifference2.txt
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:189) [AtomStructureParser]-[initial] Parser nucleus name: Ha
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:206) [AtomStructureParser]-[initial] Parser track number: 5
+2019-05-22 21:32:31 [INFO] (AtomStructureParser.java:230) [AtomStructureParser]-[initial] Parser the electron number: NumberOfElectron ::= 1/1;2/8;3/18;4/22;5/8
+2019-05-22 21:32:31 [INFO] (AtomStructure.java:45) [AtomStructure]-[<init>] Build a new AtomStrucutre
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:81) [CircularOrbitFactory]-[build] Ha add new central point: Ha
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 1
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:32:31 [INFO] (CircularOrbitAPIs.java:362) [CircularOrbitAPIs]-[getDifference] Get the Difference :AtomStructure,AtomStructure
+2019-05-22 21:33:57 [INFO] (TrackGameManager.java:103) [TrackGameManager]-[clear] Clear TrackGame Manager
+2019-05-22 21:33:57 [INFO] (TrackGameParser.java:168) [TrackGameParser]-[parserFile] Pass the file check: src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:33:57 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:33:57 [INFO] (TrackGameParser.java:232) [TrackGameParser]-[athletes] Parser all the athletes objects, number is 7
+2019-05-22 21:33:57 [INFO] (TrackGameParser.java:204) [TrackGameParser]-[trackNum] Parser track number: 7
+2019-05-22 21:33:57 [INFO] (TrackGameParser.java:185) [TrackGameParser]-[raceType] Parser the game: 100
+2019-05-22 21:33:57 [INFO] (TrackGameManager.java:94) [TrackGameManager]-[initial] Initialize TrackGame Manager, filePaht: src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:33:57 [INFO] (TrackGameManager.java:231) [TrackGameManager]-[grouping] Generate the group of TrackGame, strategy: DividerAscendingOrder
+2019-05-22 21:33:57 [INFO] (TrackGame.java:54) [TrackGame]-[<init>] Build a new TrackGame, TrackGame0
+2019-05-22 21:33:57 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 6
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 7
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Ronaldo on track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chistropher on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Cliton on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Bolt on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Lewis on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Peter on track: 6
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Coal on track: 7
+2019-05-22 21:33:58 [INFO] (TrackGameManager.java:103) [TrackGameManager]-[clear] Clear TrackGame Manager
+2019-05-22 21:33:58 [INFO] (TrackGameParser.java:168) [TrackGameParser]-[parserFile] Pass the file check: src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:33:58 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:33:58 [INFO] (TrackGameParser.java:232) [TrackGameParser]-[athletes] Parser all the athletes objects, number is 6
+2019-05-22 21:33:58 [INFO] (TrackGameParser.java:204) [TrackGameParser]-[trackNum] Parser track number: 7
+2019-05-22 21:33:58 [INFO] (TrackGameParser.java:185) [TrackGameParser]-[raceType] Parser the game: 100
+2019-05-22 21:33:58 [INFO] (TrackGameManager.java:94) [TrackGameManager]-[initial] Initialize TrackGame Manager, filePaht: src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:33:58 [INFO] (TrackGameManager.java:231) [TrackGameManager]-[grouping] Generate the group of TrackGame, strategy: DividerAscendingOrder
+2019-05-22 21:33:58 [INFO] (TrackGame.java:54) [TrackGame]-[<init>] Build a new TrackGame, TrackGame0
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 6
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 7
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Trump on track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Obama on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chistropher on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Cliton on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Park on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chen on track: 6
+2019-05-22 21:33:58 [INFO] (CircularOrbitAPIs.java:362) [CircularOrbitAPIs]-[getDifference] Get the Difference :TrackGame,TrackGame
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:152) [AtomStructureParser]-[parserFile] Pass the file check: src/txt/AtomicStructure_TestDifference1.txt
+2019-05-22 21:33:58 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/AtomicStructure_TestDifference1.txt
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:189) [AtomStructureParser]-[initial] Parser nucleus name: Er
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:206) [AtomStructureParser]-[initial] Parser track number: 6
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:230) [AtomStructureParser]-[initial] Parser the electron number: NumberOfElectron ::= 1/2;2/8;3/18;4/30;5/8;6/2
+2019-05-22 21:33:58 [INFO] (AtomStructure.java:45) [AtomStructure]-[<init>] Build a new AtomStrucutre
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:81) [CircularOrbitFactory]-[build] Er add new central point: Er
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 6
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 6
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 6
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:152) [AtomStructureParser]-[parserFile] Pass the file check: src/txt/AtomicStructure_TestDifference2.txt
+2019-05-22 21:33:58 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/AtomicStructure_TestDifference2.txt
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:189) [AtomStructureParser]-[initial] Parser nucleus name: Ha
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:206) [AtomStructureParser]-[initial] Parser track number: 5
+2019-05-22 21:33:58 [INFO] (AtomStructureParser.java:230) [AtomStructureParser]-[initial] Parser the electron number: NumberOfElectron ::= 1/1;2/8;3/18;4/22;5/8
+2019-05-22 21:33:58 [INFO] (AtomStructure.java:45) [AtomStructure]-[<init>] Build a new AtomStrucutre
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:81) [CircularOrbitFactory]-[build] Ha add new central point: Ha
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 1
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:33:58 [INFO] (CircularOrbitAPIs.java:362) [CircularOrbitAPIs]-[getDifference] Get the Difference :AtomStructure,AtomStructure
+2019-05-22 21:38:02 [INFO] (TrackGameManager.java:103) [TrackGameManager]-[clear] Clear TrackGame Manager
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:168) [TrackGameParser]-[parserFile] Pass the file check: src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:38:03 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:232) [TrackGameParser]-[athletes] Parser all the athletes objects, number is 7
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:204) [TrackGameParser]-[trackNum] Parser track number: 7
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:185) [TrackGameParser]-[raceType] Parser the game: 100
+2019-05-22 21:38:03 [INFO] (TrackGameManager.java:94) [TrackGameManager]-[initial] Initialize TrackGame Manager, filePaht: src/txt/TrackGame_TestDifference1.txt
+2019-05-22 21:38:03 [INFO] (TrackGameManager.java:231) [TrackGameManager]-[grouping] Generate the group of TrackGame, strategy: DividerAscendingOrder
+2019-05-22 21:38:03 [INFO] (TrackGame.java:54) [TrackGame]-[<init>] Build a new TrackGame, TrackGame0
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 6
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 7
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Ronaldo on track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chistropher on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Cliton on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Bolt on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Lewis on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Peter on track: 6
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Coal on track: 7
+2019-05-22 21:38:03 [INFO] (TrackGameManager.java:103) [TrackGameManager]-[clear] Clear TrackGame Manager
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:168) [TrackGameParser]-[parserFile] Pass the file check: src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:38:03 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:232) [TrackGameParser]-[athletes] Parser all the athletes objects, number is 6
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:204) [TrackGameParser]-[trackNum] Parser track number: 7
+2019-05-22 21:38:03 [INFO] (TrackGameParser.java:185) [TrackGameParser]-[raceType] Parser the game: 100
+2019-05-22 21:38:03 [INFO] (TrackGameManager.java:94) [TrackGameManager]-[initial] Initialize TrackGame Manager, filePaht: src/txt/TrackGame_TestDifference2.txt
+2019-05-22 21:38:03 [INFO] (TrackGameManager.java:231) [TrackGameManager]-[grouping] Generate the group of TrackGame, strategy: DividerAscendingOrder
+2019-05-22 21:38:03 [INFO] (TrackGame.java:54) [TrackGame]-[<init>] Build a new TrackGame, TrackGame0
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 6
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:41) [CircularOrbitFactory]-[build] TrackGame0 add new track: 7
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Trump on track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Obama on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chistropher on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Cliton on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Park on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:47) [CircularOrbitFactory]-[build] TrackGame0 add new athlete: Chen on track: 6
+2019-05-22 21:38:03 [INFO] (CircularOrbitAPIs.java:362) [CircularOrbitAPIs]-[getDifference] Get the Difference :TrackGame,TrackGame
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:152) [AtomStructureParser]-[parserFile] Pass the file check: src/txt/AtomicStructure_TestDifference1.txt
+2019-05-22 21:38:03 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/AtomicStructure_TestDifference1.txt
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:189) [AtomStructureParser]-[initial] Parser nucleus name: Er
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:206) [AtomStructureParser]-[initial] Parser track number: 6
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:230) [AtomStructureParser]-[initial] Parser the electron number: NumberOfElectron ::= 1/2;2/8;3/18;4/30;5/8;6/2
+2019-05-22 21:38:03 [INFO] (AtomStructure.java:45) [AtomStructure]-[<init>] Build a new AtomStrucutre
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:81) [CircularOrbitFactory]-[build] Er add new central point: Er
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Er add new track: 6
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 6
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Er add new electron on track: 6
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:152) [AtomStructureParser]-[parserFile] Pass the file check: src/txt/AtomicStructure_TestDifference2.txt
+2019-05-22 21:38:03 [INFO] (Parser.java:80) [Parser]-[getText] Get the text of src/txt/AtomicStructure_TestDifference2.txt
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:189) [AtomStructureParser]-[initial] Parser nucleus name: Ha
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:206) [AtomStructureParser]-[initial] Parser track number: 5
+2019-05-22 21:38:03 [INFO] (AtomStructureParser.java:230) [AtomStructureParser]-[initial] Parser the electron number: NumberOfElectron ::= 1/1;2/8;3/18;4/22;5/8
+2019-05-22 21:38:03 [INFO] (AtomStructure.java:45) [AtomStructure]-[<init>] Build a new AtomStrucutre
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:81) [CircularOrbitFactory]-[build] Ha add new central point: Ha
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:85) [CircularOrbitFactory]-[build] Ha add new track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 1
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 2
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 3
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 4
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitFactory.java:92) [CircularOrbitFactory]-[build] Ha add new electron on track: 5
+2019-05-22 21:38:03 [INFO] (CircularOrbitAPIs.java:362) [CircularOrbitAPIs]-[getDifference] Get the Difference :AtomStructure,AtomStructure

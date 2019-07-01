@@ -1,0 +1,7 @@
+2019-05-25 21:59:31 [ERROR] (AtomStructureParser.java:160) [AtomStructureParser]-[parserFile] [exception.IllegalElementFormatException] [Reselect] Illegal format Electron number, should be positive Integer format, but was : 0
+2019-05-25 22:12:53 [ERROR] (AtomStructureParser.java:136) [AtomStructureParser]-[parserFile] [exception.IllegalElementFormatException] [Reselect] Illegal format Electrons should be NumberOfElectron ::= 1/a;2/b;3/c... but was : NumberOfElectron ::= 1/2;2/8;3/18;4/8;5/1
+
+2019-05-25 22:14:24 [ERROR] (AtomStructureParser.java:136) [AtomStructureParser]-[parserFile] [exception.IllegalElementFormatException] [Reselect] Illegal format Electrons should be NumberOfElectron ::= 1/a;2/b;3/c... but was : NumberOfElectron ::= 1/2;2/8;3/18;4/8;5/1
+
+2019-05-26 19:03:26 [ERROR] (AtomStructureParser.java:136) [AtomStructureParser]-[parserFile] [exception.IllegalElementFormatException] [Reselect] Illegal format Electrons should be NumberOfElectron ::= 1/a;2/b;3/c... but was : NumberOfElectron ::= 1/6;2/0;
+2019-05-26 19:12:19 [ERROR] (AtomStructureParser.java:136) [AtomStructureParser]-[parserFile] [exception.IllegalElementFormatException] [Reselect] Illegal format Electrons should be NumberOfElectron ::= 1/a;2/b;3/c... but was : NumberOfElectron ::= 1/1;
