@@ -1,0 +1,339 @@
+src  java 文件自行组织包结构，做到有序、清晰    
+	circularOrbit  包含 3.4 节各 ADT 相关的代码     
+		….java    
+	track    包含 3.5 节各 ADT 相关的代码     
+		….java    
+	centralObject  包含 3.6 节各 ADT 相关的代码     
+		….java    
+	physicalObject 包含 3.7 节各 ADT 相关的代码     
+		….java    
+	APIs    包含 3.8 节和 3.9 节的相关代码     
+		CircularOrbitAPIs.java     
+		CircularOrbitHelper.java    
+	applications  包含 3.11 节各应用的相关代码     
+		….java    
+	otherDirectory 你所需的其他目录，可自行增加 
+
+# CircularOrbit <Interface>
+类型为接口，规定行为，泛型参数为 L 中心物体 E 轨道物体 内部存在一个Track类
+位于顶层
+
+描述：
+	由唯一一个中心点和多条轨道构成的系统，在中心点和 轨道上承载多个物体，物体在轨道上可保持静止或持续 运动，物体与物体之间可存在联系。 将该类系统放在直角坐标系中，可看作是以原点(0,0) 为中心的多个同心圆
+
+行为包含
+	+ 增加去除轨道 
+		boolean addTrack(Track track);
+			向对象中添加新的、空的track，如果对象中没有相同的track，那么就添加，否则不添加，新添加的track默认在track序列的最后一位
+		Track removeTrack(Track track);
+			移除对象中轨道，如果存在该轨道，则移除轨道，包括轨道中的physicalobject一块移除，返回被移除track的对象。如果orbit中的track是顺序的，那么该track顺位tracks依次前移一位。即如果轨道顺序为 a-b-c-d，移去c，顺序变为 a-b-d
+
+	+ 增加中心点物体
+		L addCentralPoint(L centralPoint);
+			如果没有中心点物体，则添加中心点物体，返回null。若存在中心点物体，则将中心点物体替换为新的，返回旧的物体。
+
+	+ 向指定轨道添加物体
+		boolean addObject(E object, Track track);
+			向指定轨道添加物体，物体必须为PhysicalObject类型物体或其子类，track在orbit中必须存在。不要求物体必须不同（例如电子都是相同的），添加的物体在track中没有次序。
+
+		boolean addObject(E object, Track track, double angle);
+			向指定轨道添加物体，物体必须为PhysicalObject类型物体或其子类，track在orbit中必须存在，angle为弧度制，角度 0 <= angle < 2PAI
+			不要求物体必须不同（例如电子都是相同的），添加的物体在track中没有次序。
+
+	+ 移除物体
+		E remove(E object);
+			移除指定轨道物体
+
+		E remove(E object, Track track);
+			指定轨道，移除指定物体
+
+	+ 添加中心物体和轨道物体关系
+	 	boolean addCentralRelation(E orbitObject);
+	 		添加中心物体和轨道物体的无相关系，关系只能添加一次且不能重复添加，两个物体都必须在orbit中存在。
+
+	+ 移除中心物体和轨道物体关系
+		E removeCentralRelation(E orbitObject);
+			移除中心物体和轨道物体关系，如果关系存在则移除，返回被移除关系的轨道物体对象，否则返回null。要求被移除关系的轨道物体必须存在。
+
+	+ 添加轨道物体关系
+	 	boolean addOrbitRelation(E object1, E object2);
+	 		添加轨道物体无向关系，物体必须存在。不要求所在轨道必须相同。关系只能添加一次。
+
+	+ 移除轨道物体关系
+		E removeOrbitRelation(E object1, E object2);
+			移除轨道物体关系，关系存在移除，返回后一个物体对象，否则返回null
+
+	+ 获得所有与中心点有关的轨道物体
+		Set<E> centrals();
+			获得所有与中心点有关的物体，没有就返回空集
+
+	+ 获得所有与指定轨道物体有关的其他轨道物体
+		Set<E> relatives(E object);
+			获得所有有关系的物体的集合，没有关系就返回空集
+
+	+ 图输入生成对象
+		CircularObject buildCircularObject(File file, Parser parser);
+			根据文件图输入和解析器parser将orbit对象初始化，要求orbit对象为空图，否则之前的orbit对象不会保存，在初始化时会被破坏。输入文件要求格式正确，否则会抛出错误。
+
+	+ 修改某物体的轨道
+		Track transit(E object, Track newTrack);
+			修改某物体所在的轨道，也就是修改某轨道物体的轨道属性，例如a属于track1，修改为a属于track2。新的轨道必须在orbit中存在，object也必须存在，修改后返回object之前所属的track对象，否则返回null。
+
+	+ 生成PhysicalObject迭代器
+		Iterator<E> iterator();
+			生成迭代器遍历object，从内轨道逐步向外，同一轨道物体按角度从小到大次序（不然就随机）
+
+	+ 对一组Track进行排序
+		void sortTrack(List<Track> tracks);
+			对一组Track进行排序，按照radius的大小进行升序排列，如果List为空则返回空表。
+
+	+ 对一组PO进行排序
+		void sortObjects(List<PhysicalObject> objects, Map<E, Position> positions);
+			对PO进行排序，按照角度angle大小从小到大进行排序。如果PO不存在angle属性，则随机排序。
+
+	+ 查找系统中是否包含指定轨道物体
+		boolean containsObject(E object);
+
+	+ 查找指定轨道中是否包含指定轨道物体
+		boolean containsObjectInTrack(E object, Track track);
+
+	+ 查找系统中是否包含指定轨道
+		boolean containsTrack(Track track);
+
+	+ 获取指定轨道在系统中的序号，从里向外分别为1，2，3……
+		int indexOf(Track track);
+
+	+ 设置指定物体的位置
+		Position getPosition(E object);
+
+# Parser <Abstract Class> 
+文件解析器，解析文件格式，修改orbit结构。同时具有检查文件格式合法性功能
+子类继承接口实现具体的解析
+
+	+ 解析文件
+		boolean abstract parserFile(File file, CircularOrbit co);
+			文件路径非空，输入文件格式需要满足规则
+
+	+ 检查label
+		boolean checkLabel(String s);
+			由大小写字母或数字构成，不含有空格和其他符号 
+
+	+ 检查word
+		boolean checkWord(String s);
+			由大小写字母构成，不含有空格 
+
+	+ 检查sentense
+		boolean checkSentence(String s);
+			由大小写字母或数字构成，可含有空格 
+
+	+ 检查number
+		boolean checkNumber(String s);
+			大于 10000 的数字按科学记数法表示（例如 1.9885e30 表示1.9885 ∗ 1030，但 e 之前数字的整数部分必 须在 1 到 9 的范围内，e 之后的数字只能是大于 3 的正整 数），小于 10000 的数字直接给出（例如 5912，103.193）， 不能用科学计数法。小数点位数不限制。 
+
+	注：子类可添加新的检查方法
+
+# Position <Class> immutable
+保存轨道物体位置的类，记录物体所属轨道（半径），角度（极坐标）
+
+描述：
+	在某些应用中，需要考虑物体在轨道上的绝对位置（例 如在 t 时刻，某物体 a 处于轨道 r，a 的位置是极坐标 系中的点(ρ, θ)，轨道 r 的半径是 ρ，θ 为物体 a 的角 度。该极坐标系的原点(0, 0)为该轨道系统的中心点。 在某些应用中，物体可以在轨道上跳跃，例如某电子从 轨道 1 跳到轨道 2。 在某些应用中，无需考虑物体的绝对位置，例如原子结 构中电子的位置、移动生态系统中 App 的位置、社交网 络中用户的位置
+
+rep包括	Track track track不为空，轨道物体必须有所属track
+		double angle 角度，-1表示该轨道物体无需考虑绝对位置
+
+	+ 获取轨道
+		Track getTrack();
+			获取所在轨道，要求Track不为空
+	+ 获取角度
+		double getAngle();
+			获取物体所处角度，该角度为极坐标下角度，使用弧度制，0 ≤ angle < 2PAI 或 -1
+
+# Relation<L, E> <Class> mutable 如果能做为Orbit内部类是最好的
+物体之间的关系，管理物体之间的关系，输入参数为L E，通过 *重载* 分别管理中心物体与轨道物体，轨道物体与轨道物体的关系。
+简单来说，就是使用delegation/aggregation来将orbit中关系事务委托给Relation类来处理。
+
+描述：
+	在某些应用中，处于中心点的物体和其他物体之间、处 于同一轨道的多个物体之间、处于不同轨道的多个物体 之间，可能存在特定的关联关系。本实验里将关系限定 为二元关系（即只能发生在两个物体之间）、无向关系。
+ 	如果用可视化的方式表示出来，一条关系表示为连接两 点之间的一条线（无箭头）
+
+rep包括	Set<E> 与中心点有关的物体
+		Map<E,E> 轨道之间物体的关系
+
+	+ 添加与中心点有关的物体关系
+		boolean addCentralRelation(E orbitObject);
+			同orbit接口
+
+	+ 添加物体与物体之间的关系
+		boolean addOrbitRelation(E object1, E object2);
+			同orbit接口
+
+	+ 删除与中心点有关的物体关系
+		E removeCentralRelation(E orbitObject);
+			同orbit接口
+
+	+ 删除物体与物体关系
+		E removeOrbitRelation(E object1, E object2);
+			同orbit接口
+
+	+ 获得所有与中心点有关的关系
+		Set<E> centrals();
+
+	+ 获得与指定物体有关系的所有物体
+		Set<E> relatives(E object);
+
+# ConcreteCircularOrbit<L,E> <Class implements CircularOrbit, Iterable<E>> mutable
+实现接口的类，实现具体的轨道系统
+rep包含	String name 系统名称
+		L centralpoint， 中心物体
+		List<Track> tracks, 保存轨道
+		Map<Track, List<E>>, 对于跑道那个，一个set中保存一个对象，电子中set保存多个
+		Map<E, Position> 保存轨道物体的位置，Position包含所属track，物体在极坐标中的角度，主要用于计算位置和绘图
+		Relation<L,E> relation 保存关系,所有关系委托给Relation类处理
+
+	+ @Override
+
+	+ toString
+		描述字符串
+	+ hashCode
+		哈希码
+	+ equals
+		比较相同，中心点，轨道，物体，关系
+
+	创建对象使用设计模式builder构造，使用builder构造能够适应多参数输入，方便应用的实现
+	比如说操场是没有中心点，也就是中心点为null
+	内部类
+	+ public static class Builder(String name) {
+		private String name = ""
+		private L centralpoint = null;
+
+		public Builder(String name) {
+			this.name = name;
+		}
+
+		public Builder CentralPoint(L centralpoint) {
+			this.centralpoint = centralpoint;
+			return this;
+		} 
+
+		public build() {
+			return new ConcreteCircularOrbit<L,E>(this);
+		}
+	}
+
+	+ 使用Builder对象创建的具体类
+		private ConcreteCircularOrbit<L,E>(Builder b) {
+			name = b.name;
+			centralpoint = b.centralpoint;
+		}
+
+	对象内部存在一个迭代器类ObjectIterator，生成迭代器，对所有PO进行迭代
+	+private class ObjectInteraor implements Iterator<E> {
+		public boolean hasNext();
+		public E next();  如果有位置的话，否则随机迭代
+		public void remove(); //不支持，因为已经有remove方法了
+	}
+
+# TrackFactory <Abstract Class> immutable  //抽象父类的工厂方法
+轨道系统内部类
+抽象父类的工厂方法，定义基本流程
+
+	+ 创建模板，基本的模板方法，产生一个新的抽象Track产品。
+		public final AbstractTrackProduct create(double radius) {
+			AbstractTrack product = createProduct(radius);
+			return product;
+		}
+
+	+ 创建抽象Track，输入半径，半径 >= 0
+		protected abstract AbstractTrack createProduct(double radius);
+
+# CircularTrackFactory <extends AbstractTrackFactory>
+圆形轨道工厂方法
+
+	+ @Override protected AbstractTrack createProduct(double radius) {
+			return new CircularTrack(radius);
+	}
+
+# Track <Abstract Class> 
+Track的抽象类，只提供一种getRadius方法
+一个轨道，属性有半径，因为是immutable的，所以里面不存object，对应关系交给orbit处理。
+半径既可以表示物理上的半径，又可以表示关系中的权重，比如亲密度5，10，15等等。
+
+描述：
+	围绕中心点的一条闭合曲线，一般为圆形或椭圆形或其 他不规则形状，本实验中统一考虑为标准圆形。轨道的 半径是指该轨道与中心点之间的距离
+
+rep包含	final radius 半径/权重
+	
+	+ 获得radius
+		public abstract double getRadius();
+
+
+# CircularTrack <extends AbstractTrack> 
+圆形轨道
+	+ 初始化
+		public CircularTrack(double radius);
+
+# PhysicalObjectFactory <AbstractClass>
+抽象工厂方法，生产po的工厂模板
+	+ 创建模板
+		public final AbstractPhysicalObject create(String name) {
+			AbstractPhysicalObject product = createProduct(String name);
+			return product;
+		}
+
+	+ 创建抽象po
+		public abstract AbstractPhysicalObject createProduct(String name);
+
+# CentralPointFactory <extends PhysicalObjectFactory> 
+为了适应后面修改的需求，所以将中心点作为接口，具体实现可以是不同的类型。
+中心点的行为好像只包括 获得名称，设置名称
+
+描述：
+	最多只有 1 个物体落在中心点，其位置保持不变，是坐 标系中的原点(0,0)。例如：“太阳”是太阳系的“中心 点”所承载的唯一物体，而体育比赛的径赛场地的中心 点无物体。 
+
+	+ 创建新的中心点物体
+		public AbstractPhysicalObject createProduct(String name) {
+		 	return new SingleCentralPoint(String name);
+		}
+
+
+# PhysicalObject <AbstrctClass>
+PO抽象类，表示PO通用特征，子类实现其不同功能
+
+描述：
+	可放置/分配到中心点或轨道的具体事物。一个多轨道 系统中可承载多个物体。物体只能出现在中心点或轨道 上，不能出现在其他位置。 例如在太阳系里，“太阳”在中心点，八颗行星分处于 不同的轨道上。在径赛场地，每条跑道被分配给最多一 个“运动员”。在原子模型中，原子核周围的每条电子 轨道上可能有多个电子。 有些应用中，物体需要区分（例如太阳系的八颗行星是 不同的、竞赛比赛中的运动员是不同的）。有些应用中，
+	物体无需区分（例如在原子结构中，各轨道上的电子可 看作都是一样的）。 
+
+	+ 获得名称
+		public  String getName() {
+			return name;
+		}
+
+
+# SingleCentralPoint <Class extends PhysicalObject> immutable
+继承自PhysicalObject抽象类，表示一个中心点，中心点的构造由构造工厂方法提供。
+
+描述：
+	单一中心点，中心点不是其他物体的聚合物，例如将内部中子和质子视为一体的原子核
+
+rep包括	String name
+	
+	+ toString();
+	+ hashCode();
+	+ equals();
+-----------------------------------------------------------------
+应用层
+#TrackGame
+	+ public Map<Integer, List<Athlete>> devided(int tracknum, List<Athlete> athletes, Devide devider);
+
+	+ public boolean exchange(Athlete a1, Athlete a2);
+		给两个选手更换赛道，更换组，如果两个选手在同一组，则更换赛道，如果在不同组，则更换组且更换赛道。
+		
+#TrackGameParser 跑步文件解析器
+
+
+
+-----------------------------------------------------------------
+API设计
+
+-----------------------------------------------------------------
+GUI设计
